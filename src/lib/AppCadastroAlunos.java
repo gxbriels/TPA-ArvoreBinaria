@@ -1,10 +1,11 @@
-package app;
+package lib;
 
-// Importe sua biblioteca (Etapa 1)
-import lib.IArvoreBinaria;
-import lib.ArvoreBinariaExemplo;
 
-// Importe os comparadores e a classe Aluno
+import app.Aluno;
+import app.ComparadorAlunoPorMatricula;
+import app.ComparadorAlunoPorNome;
+
+
 import java.util.Comparator;
 import java.util.Scanner;
 import java.util.Arrays;
@@ -141,7 +142,6 @@ public class AppCadastroAlunos {
 
                     // --- Comandos de Busca (lógica inalterada, mas importante) ---
                     case "buscar_matricula":
-                        // ... (código anterior) ...
                         if (partes.length != 2) {
                             System.out.println("Erro: Formato inválido. Use: buscar_matricula <matricula>");
                             continue;
@@ -166,7 +166,6 @@ public class AppCadastroAlunos {
                         break;
 
                     case "buscar_nome":
-                        // ... (código anterior) ...
                         if (partes.length < 2) {
                             System.out.println("Erro: Formato inválido. Use: buscar_nome <nome completo>");
                             continue;

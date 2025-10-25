@@ -6,13 +6,12 @@ package lib;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.LinkedList; // Importar para usar na Fila (Queue)
-import java.util.Queue;     // Importar para usar na Fila (Queue)
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  *
  * @author victoriocarvalho
- * (Implementação preenchida por Gemini)
  */
 public class ArvoreBinariaExemplo<T> implements IArvoreBinaria<T> {
 
@@ -53,7 +52,6 @@ public class ArvoreBinariaExemplo<T> implements IArvoreBinaria<T> {
             no.setFilhoDireita(adicionar(no.getFilhoDireita(), novoValor));
         } else {
             // Se for IGUAL, não faz nada (não permitimos duplicatas neste exemplo)
-            // Você pode ajustar isso se a regra do trabalho for diferente.
         }
 
         return no; // Retorna o nó (com a subárvore atualizada)
@@ -154,7 +152,6 @@ public class ArvoreBinariaExemplo<T> implements IArvoreBinaria<T> {
 
     /**
      * Método recursivo privado para remover.
-     * Esta é a parte mais complexa.
      */
     private NoExemplo<T> remover(NoExemplo<T> no, T valor) {
         // 1. Caso Base: Nó nulo
