@@ -14,12 +14,14 @@ public class NoExemplo<T> {
     private T valor;
     private NoExemplo<T> filhoDireita;
     private NoExemplo<T> filhoEsquerda;
+    protected int altura;
 
     
     public NoExemplo(T valor){
         this.valor = valor;
         this.filhoDireita = null;
         this.filhoEsquerda = null;
+        this.altura = 0;
     }
     
     /**
@@ -62,6 +64,12 @@ public class NoExemplo<T> {
      */
     public void setFilhoEsquerda(NoExemplo<T> filhoEsquerda) {
         this.filhoEsquerda = filhoEsquerda;
+    }
+
+    public int getAltura() { return altura;}
+
+    public void setAltura(int altura){
+        this.altura = altura;
     }
     
     
