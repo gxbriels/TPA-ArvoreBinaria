@@ -58,23 +58,23 @@ Funcionalidades Principais
 
 O projeto é organizado em dois pacotes principais, app e lib.
 
-/
-├── app/
-│   ├── Aluno.java                     # Classe de modelo (POJO)
-│   ├── ComparadorAlunoPorMatricula.java # Estratégia de comparação
-│   ├── ComparadorAlunoPorNome.java    # Estratégia de comparação
-│   ├── AppCadastroAlunos.java         # (Etapa 2) Aplicação interativa
-│   ├── AppRelatorioArvoreBinaria.java  # (Etapa 3) Teste da BST
-│   └── AppRelatorioAVL.java           # (Etapa 5) Teste da AVL
-│
-├── lib/
-│   ├── IArvoreBinaria.java           # Interface obrigatória do trabalho
-│   ├── NoExemplo.java                 # Classe do nó (com altura para AVL)
-│   ├── ArvoreBinariaExemplo.java      # (Etapa 1) Implementação da BST
-│   ├── ArvoreAVLExemplo.java          # (Etapa 4) Implementação da AVL
-│   └── ExemploTreeSet.java            # (Etapa 6) Código de pesquisa da bib. Java
-│
-└── README.md
+    /
+    ├── app/
+    │   ├── Aluno.java                     # Classe de modelo (POJO)
+    │   ├── ComparadorAlunoPorMatricula.java # Estratégia de comparação
+    │   ├── ComparadorAlunoPorNome.java    # Estratégia de comparação
+    │   ├── AppCadastroAlunos.java         # (Etapa 2) Aplicação interativa
+    │   ├── AppRelatorioArvoreBinaria.java  # (Etapa 3) Teste da BST
+    │   └── AppRelatorioAVL.java           # (Etapa 5) Teste da AVL
+    │
+    ├── lib/
+    │   ├── IArvoreBinaria.java           # Interface obrigatória do trabalho
+    │   ├── NoExemplo.java                 # Classe do nó (com altura para AVL)
+    │   ├── ArvoreBinariaExemplo.java      # (Etapa 1) Implementação da BST
+    │   ├── ArvoreAVLExemplo.java          # (Etapa 4) Implementação da AVL
+    │   └── ExemploTreeSet.java            # (Etapa 6) Código de pesquisa da bib. Java
+    │
+    └── README.md
 
 ⚙️ Como Compilar e Executar
 
@@ -87,31 +87,28 @@ Este projeto foi desenvolvido e testado em ambiente Linux (Ubuntu) e pode ser co
 2. Compilação
 
 Navegue até a pasta raiz do projeto (a que contém app/ e lib/) e execute o comando de compilação:
-Bash
-javac app/*.java lib/*.java
+
+Bash --> javac app/*.java lib/*.java
 
 3. Executando a Aplicação Principal (Etapa 2)
 
 Este é o programa interativo de cadastro de alunos.
-Bash
 
-java app.AppCadastroAlunos
+Bash --> java app.AppCadastroAlunos
 
 O programa perguntará se deseja indexar por Matrícula ou Nome e, em seguida, apresentará o menu de comandos (adicionar, remover_nome, listar_ordem, sair, etc.).
 
 4. Executando os Relatórios de Performance (Etapas 3 e 5)
 
 Para gerar os dados do relatório da Etapa 3 (BST):
-Bash
 
-java app.AppRelatorioArvoreBinaria
+Bash --> java app.AppRelatorioArvoreBinaria
 
 (É esperado que este comando termine com um StackOverflowError, como explicado no relatório).
 
 Para gerar os dados do relatório da Etapa 5 (AVL):
-Bash
 
-java app.AppRelatorioAVL
+Bash --> java app.AppRelatorioAVL
 
 (Este comando deve executar com sucesso, demonstrando a eficiência da AVL).
 
@@ -130,9 +127,7 @@ Ele demonstra que:
     Busca por Chave Secundária (O(n)): O TreeSet não oferece um método otimizado para buscar por uma chave secundária (como nosso pesquisar(T, Comparator)). Para fazer isso, é necessário varrer todos os elementos da árvore manualmente, usando stream().filter(), o que resulta na mesma complexidade O(n) (linear) da nossa implementação.
 
 Para executar este arquivo de exemplo:
-Bash
-
-java lib.ExemploTreeSet
+Bash --> java lib.ExemploTreeSet
 
 👨‍💻 Autores
 
